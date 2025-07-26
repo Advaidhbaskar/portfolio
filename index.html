@@ -7,80 +7,267 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+    <span class="sun-icon">☀️</span>
+    <span class="moon-icon">🌙</span>
+  </button>
+
+  <!-- Header with Navigation -->
   <header>
     <div class="container">
-      <h1>Advaidh Baskar</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <h1>Advaidh Baskar</h1>
+        <nav>
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <section id="about" class="section">
+  <!-- Home Section -->
+  <section id="home" class="section hero">
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm <strong>Advaidh Baskar</strong>, a passionate Computer Science and Engineering student currently pursuing my B.Tech (CSE Core) at <strong>SRM University, Kattankulathur</strong>. I'm in my second year and hold a CGPA of <strong>8.72</strong> as I continuously work toward mastering both software and problem-solving skills.
-      </p>
-      <p>
-        My academic journey began at <strong>Sri Sankara Senior Secondary School, Chennai</strong>, where I scored <strong>93%</strong> in my 10th board exams and <strong>88%</strong> in my 12th. Those years helped build my foundation in analytical thinking, discipline, and communication.
-      </p>
-      <p>
-        I'm known for being a <strong>fast learner</strong>, a strong <strong>team player</strong>, and someone who thrives in challenging environments. I’m deeply interested in <strong>software development, front-end engineering, and AI-driven applications</strong>.
-      </p>
-      <p>
-        I'm fluent in programming languages such as <strong>C, C++, Python, and Java</strong>. I’ve completed certifications in:
-        <ul>
-          <li>Udemy - C and C++</li>
-          <li>Data Flair - C++</li>
-          <li>NPTEL - Java Programming</li>
-        </ul>
-      </p>
-      <p>
-        Outside of tech, I bring the same energy and discipline into sports. I’m a <strong>state and district-level karate champion</strong>, have represented in <strong>district-level cricket</strong>, and actively played <strong>school volleyball</strong>. These experiences taught me commitment, leadership, and handling pressure.
-      </p>
-      <p>
-        I’m currently looking for opportunities to intern, collaborate on projects, and grow in the fields of <strong>front-end development, AI, and software engineering</strong>.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>MindEase AI</h3>
-          <p>An AI-powered stress management app designed to help students and professionals track, manage, and reduce stress through personalized suggestions.</p>
-        </div>
-        <div class="project">
-          <h3>Student Examination Management System</h3>
-          <p>A DBMS-based online examination portal for conducting and evaluating exams efficiently.</p>
-        </div>
-        <div class="project">
-          <h3>Attendance Management System</h3>
-          <p>A simple attendance tracking system using basic C++ and file handling.</p>
+      <div class="hero-content">
+        <h1 class="hero-title">Hello, I'm Advaidh Baskar</h1>
+        <p class="hero-subtitle">Computer Science & Engineering Student | Full-Stack Developer | Problem Solver</p>
+        <p class="hero-description">
+          Passionate about creating innovative solutions through code and building meaningful digital experiences.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: advaidh@example.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/advaidh" target="_blank">linkedin.com/in/advaidh</a></p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="intro-text">
+            Hello! I'm <strong>Advaidh Baskar</strong>, a passionate Computer Science and Engineering student currently pursuing my B.Tech (CSE Core) at <strong>SRM University, Kattankulathur</strong>. I'm in my second year and hold a CGPA of <strong>8.72</strong> as I continuously work toward mastering both software and problem-solving skills.
+          </p>
+          <p>
+            My academic journey began at <strong>Sri Sankara Senior Secondary School, Chennai</strong>, where I scored <strong>93%</strong> in my 10th board exams and <strong>88%</strong> in my 12th. Those years helped build my foundation in analytical thinking, discipline, and communication.
+          </p>
+          <p>
+            I'm known for being a <strong>fast learner</strong>, a strong <strong>team player</strong>, and someone who thrives in challenging environments. I'm deeply interested in <strong>software development, front-end engineering, and AI-driven applications</strong>.
+          </p>
+        </div>
+        
+        <div class="skills-section">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">C/C++</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML/CSS</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certifications">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Udemy - C and C++</li>
+            <li>Data Flair - C++</li>
+            <li>NPTEL - Java Programming</li>
+          </ul>
+        </div>
+
+        <div class="achievements">
+          <h3>Sports & Achievements</h3>
+          <p>
+            Outside of tech, I bring the same energy and discipline into sports. I'm a <strong>state and district-level karate champion</strong>, have represented in <strong>district-level cricket</strong>, and actively played <strong>school volleyball</strong>. These experiences taught me commitment, leadership, and handling pressure.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">💼</div>
+          </div>
+          <div class="project-content">
+            <h3>Responsive Portfolio Website</h3>
+            <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript. Features dark mode toggle, smooth scrolling navigation, and mobile-first design with professional animations and interactive elements.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="https://github.com/advaidh" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🎯</div>
+          </div>
+          <div class="project-content">
+            <h3>Interactive Quiz Application</h3>
+            <p>An engaging quiz application with multiple categories, timer functionality, score tracking, and interactive UI. Features dynamic question loading, progress indicators, and result analytics with responsive design.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo</a>
+              <a href="https://github.com/advaidh" class="project-link">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder">🚀</div>
+          </div>
+          <div class="project-content">
+            <h3>GitHub Repository Collection</h3>
+            <p>A collection of various programming projects and code samples showcasing different technologies and problem-solving approaches. Includes algorithms, data structures, and web development projects.</p>
+            <div class="project-tech">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Web Dev</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/advaidh" class="project-link">View Repository</a>
+              <a href="https://github.com/advaidh" class="project-link">GitHub Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:advaidhthebest12@gmail.com">advaidhthebest12@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+917358064414">+91 7358064414</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <h3>LinkedIn</h3>
+              <p><a href="https://linkedin.com/in/advaidh" target="_blank">linkedin.com/in/advaidh</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💻</span>
+            <div>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/advaidh" target="_blank">github.com/advaidh</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Google Maps Integration -->
+      <div class="map-container">
+        <h3>Location</h3>
+        <div class="map-placeholder">
+          <p>📍 SRM University, Kattankulathur, Chennai</p>
+          <small>Interactive map would be integrated here with Google Maps API</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Advaidh Baskar. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/advaidh" target="_blank" aria-label="LinkedIn">💼</a>
+        <a href="https://github.com/advaidh" target="_blank" aria-label="GitHub">💻</a>
+        <a href="mailto:advaidhthebest12@gmail.com" aria-label="Email">📧</a>
+        <a href="tel:+917358064414" aria-label="Phone">📱</a>
+      </div>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
